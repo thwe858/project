@@ -17,6 +17,9 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/hello', function () {
-    return 'Hello World';
-});
+ Route::get('/show',[App\Http\Controllers\IntroController::class,'show']);
+
+Route::get('/about',[App\Http\Controllers\IntroController::class,'about']);
+Route::get('/contant',[App\Http\Controllers\IntroController::class,'contant']);
+
+Route::get('/test',[App\Http\Controllers\TestController::class,'test']);
