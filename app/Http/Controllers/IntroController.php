@@ -7,12 +7,19 @@ use Illuminate\Http\Request;
 class IntroController extends Controller
 {
     public function show(){
-        return view('show');
+        $title='this is show page';
+        $tdos=[
+            'learn laravel',
+            'learn vue',
+            'learn Inertia',
+
+        ];
+
+        return view('title','show',compact('tdos'));
     }
-    public function about(){
-        return view('about');
-    }
-    public function contant(){
-        return view('contant');
+
+
+    public function testfun(){
+        return view('test.testui');
     }
 }

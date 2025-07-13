@@ -10,4 +10,12 @@ class TestController extends Controller
     {
         return view('test');
     }
+     public function about()
+    {
+        return view('mytest.about');
+    }
+     public function contact()
+    {
+        return view('test');
+    }
 }
